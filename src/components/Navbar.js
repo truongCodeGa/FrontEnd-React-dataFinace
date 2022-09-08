@@ -2,23 +2,8 @@ import React, { useState } from "react";
 import { RiMenuLine } from "react-icons/ri";
 import { MdOutlineClose } from "react-icons/md";
 import { BsFillBackspaceReverseFill } from "react-icons/bs";
-const dataNav = [
-  {
-    title: "Home",
-  },
-  {
-    title: "Company",
-  },
-  {
-    title: "Resources",
-  },
-  {
-    title: "About",
-  },
-  {
-    title: "Contact",
-  },
-];
+import { dataNav } from "../constants";
+
 const Navbar = ({ children }) => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
@@ -68,19 +53,12 @@ const Navbar = ({ children }) => {
       `}
       >
         <div className="flex">
-          {/* <h1
-            className="w-full text-3xl font-bold 
-      text-primary m-4"
-          >
-            REACT.
-          </h1> */}
           <div
             onClick={handleNavClose}
             className="w-full flex items-center cursor-pointer justify-center py-4 
             relative group
             "
           >
-            {/* <MdOutlineClose size={25}></MdOutlineClose> */}
             <BsFillBackspaceReverseFill
               size={25}
               className="z-40"

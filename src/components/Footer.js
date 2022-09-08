@@ -6,41 +6,8 @@ import {
   FaGithubSquare,
   FaDribbbleSquare,
 } from "react-icons/fa";
-const dataFooter = [
-  {
-    category: "Solutions",
-    text: [
-      { title: "Analytics" },
-      { title: "Marketing" },
-      { title: "Commerce" },
-      { title: "Insights" },
-    ],
-  },
+import { dataFooter } from "../constants";
 
-  {
-    category: "Support",
-    text: [
-      { title: "Pricing" },
-      { title: "Documentation" },
-      { title: "Guides" },
-      { title: "API Status" },
-    ],
-  },
-  {
-    category: "Company",
-    text: [
-      { title: "About" },
-      { title: "Blog" },
-      { title: "Jobs" },
-      { title: "Press" },
-      { title: "Careers" },
-    ],
-  },
-  {
-    category: "Legal",
-    text: [{ title: "Claim" }, { title: "Policy" }, { title: "Terms" }],
-  },
-];
 const Footer = () => {
   return (
     <div className="w-full  px-4  text-gray-300">

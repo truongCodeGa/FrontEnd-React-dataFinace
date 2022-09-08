@@ -1,40 +1,8 @@
 import React from "react";
-import Single from "../assets/single.png";
-import Double from "../assets/double.png";
-import Triple from "../assets/triple.png";
+import { DataTextGB } from "../constants";
+
 import Button from "./button";
-const DataTextGB = [
-  {
-    img: Single,
-    money: "$149",
-    title: "Single User",
-    offer: [
-      { text: "500 GB Storage" },
-      { text: "1 Granted User" },
-      { text: "Send up to 2 GB" },
-    ],
-  },
-  {
-    img: Double,
-    money: "$199",
-    title: `Partnership`,
-    offer: [
-      { text: "1 TB Storage" },
-      { text: "3 users Allowed" },
-      { text: "Send up to 10 GB" },
-    ],
-  },
-  {
-    img: Triple,
-    money: "$299",
-    title: "Group Account",
-    offer: [
-      { text: "5 TB Storage" },
-      { text: "10 users Allowed" },
-      { text: "Send up to 20 GB" },
-    ],
-  },
-];
+
 const Cards = () => {
   return (
     <div className="w-full py-[10rem] px-4 bg-white">
